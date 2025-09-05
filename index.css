@@ -1619,8 +1619,8 @@ ul.elementor-nav-menu--dropdown a:hover {
   content: "\e910";
 }
 .elementor-kit-1771 {
-  --e-global-color-primary: #6da843;
-  --e-global-color-secondary: #365459;
+  --e-global-color-primary: #3abfef;
+  --e-global-color-secondary: #08344e;
   --e-global-color-text: #1b1b1b;
   --e-global-color-accent: #000000;
   --e-global-color-bd28782: #ffffff;
@@ -5988,7 +5988,7 @@ body.rtl .elementor-1853 .elementor-element.elementor-element-3538f65 {
   }
 }
 .green {
-  color: #6da843 !important;
+  color: #3abfef !important;
 }
 .blue {
   color: #365459 !important;
@@ -6093,10 +6093,10 @@ body.rtl .elementor-1853 .elementor-element.elementor-element-3538f65 {
   content: "";
 }
 .elementor-widget-button .elementor-button::before {
-  background: #365459;
+  background: #08344e;
 }
 .elementor-widget-button .elementor-button::after {
-  background: #6da843;
+  background: #3abfef;
   transform: translateX(-100%);
 }
 .elementor-button:hover .elementor-button-text {
@@ -6123,16 +6123,16 @@ body.rtl .elementor-1853 .elementor-element.elementor-element-3538f65 {
   background: #fff;
 }
 .whitebutton.elementor-widget-button .elementor-button::after {
-  background: #6da843;
+  background: #3abfef;
 }
 .greenbutton.elementor-widget-button .elementor-button {
   color: #fff;
 }
 .greenbutton.elementor-widget-button .elementor-button::before {
-  background: #6da843;
+  background: #3abfef;
 }
 .greenbutton.elementor-widget-button .elementor-button::after {
-  background: #365459;
+  background: #08344e;
 }
 .blackbutton.elementor-widget-button .elementor-button {
   color: #fff;
@@ -6141,7 +6141,7 @@ body.rtl .elementor-1853 .elementor-element.elementor-element-3538f65 {
   background: #000;
 }
 .blackbutton.elementor-widget-button .elementor-button::after {
-  background: #365459;
+  background: #08344e;
 }
 .solutionimg {
   position: relative;
