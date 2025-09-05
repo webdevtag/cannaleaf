@@ -2990,8 +2990,8 @@ body.rtl .elementor-92 .elementor-element.elementor-element-34204164 {
   text-align: left;
 }
 .elementor-1845 .elementor-element.elementor-element-3c5499e img {
-  width: 120px;
-  max-width: 120px;
+  width: 254px;
+  max-width: 254px;
 }
 .elementor-1845 .elementor-element.elementor-element-ebcc756 {
   --display: flex;
@@ -3276,7 +3276,7 @@ body.rtl .elementor-92 .elementor-element.elementor-element-34204164 {
 }
 @media (min-width: 768px) {
   .elementor-1845 .elementor-element.elementor-element-67c8506 {
-    --width: 18%;
+    --width: 31%;
   }
   .elementor-1845 .elementor-element.elementor-element-ebcc756 {
     --width: 80%;
@@ -3421,12 +3421,12 @@ body.rtl .elementor-92 .elementor-element.elementor-element-34204164 {
   transition: all 0.9s ease;
 }
 #header.elementor-sticky--effects .logo img {
-  content: url("https://hodtec.com/wp-content/uploads/2024/07/hodtec-logo.png");
-  width: 100px;
-  max-width: 100px;
+  content: url("../wp-content/uploads/Cannaleaf-Logo.png");
+  width: 234px;
+  max-width: 234px;
 }
 #header:hover .logo img {
-  content: url("https://hodtec.com/wp-content/uploads/2024/07/hodtec-logo.png");
+  content: url("../wp-content/uploads/Cannaleaf-Logo.png");
 }
 #header.elementor-sticky--effects .navmenu a,
 #header:hover .navmenu a {
@@ -3696,10 +3696,10 @@ body.rtl .elementor-92 .elementor-element.elementor-element-34204164 {
 }
 @media (min-width: 768px) {
   .elementor-1842 .elementor-element.elementor-element-1e64362 {
-    --width: 33.3333%;
+    --width: 30%;
   }
   .elementor-1842 .elementor-element.elementor-element-9625643 {
-    --width: 66.6666%;
+    --width: 70%;
   }
 }
 @media (max-width: 767px) {
