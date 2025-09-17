@@ -974,13 +974,7 @@
                             <div class="gform_heading">
                               <p class="gform_required_legend"></p>
                             </div>
-                            <form
-                              method="post"
-                              enctype="multipart/form-data"
-                              id="gform_1"
-                              data-formid="1"
-                              novalidate
-                            >
+                            <form action="contact.php" method="POST">
                               <div
                                 class="gf_invisible ginput_recaptchav3"
                                 data-sitekey="6LcNC4MqAAAAAKoRa9OEv2viw-llQdi9zsEsyhIc"
@@ -1017,7 +1011,7 @@
                                       class="ginput_container ginput_container_text"
                                     >
                                       <input
-                                        name="input_1"
+                                        name="name"
                                         id="input_1_1"
                                         type="text"
                                         value=""
@@ -1046,7 +1040,7 @@
                                       class="ginput_container ginput_container_text"
                                     >
                                       <input
-                                        name="input_5"
+                                        name="lastname"
                                         id="input_1_5"
                                         type="text"
                                         value=""
@@ -1076,7 +1070,7 @@
                                       class="ginput_container ginput_container_email"
                                     >
                                       <input
-                                        name="input_3"
+                                        name="email"
                                         id="input_1_3"
                                         type="email"
                                         value=""
@@ -1106,7 +1100,7 @@
                                       class="ginput_container ginput_container_text"
                                     >
                                       <input
-                                        name="input_6"
+                                        name="business"
                                         id="input_1_6"
                                         type="text"
                                         value=""
@@ -1130,7 +1124,7 @@
                                       class="ginput_container ginput_container_phone"
                                     >
                                       <input
-                                        name="input_2"
+                                        name="phone"
                                         id="input_1_2"
                                         type="tel"
                                         value=""
@@ -1859,7 +1853,7 @@
                                       class="ginput_container ginput_container_select"
                                     >
                                       <select
-                                        name="input_9"
+                                        name="role"
                                         id="input_1_9"
                                         class="large gfield_select"
                                         aria-required="true"
@@ -1908,7 +1902,7 @@
                                       class="ginput_container ginput_container_textarea"
                                     >
                                       <textarea
-                                        name="input_4"
+                                        name="message"
                                         id="input_1_4"
                                         class="textarea small"
                                         placeholder="How Can We Help You?"
@@ -2784,30 +2778,5 @@
       async
       src="../wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"
     ></script>
-
-    <script>
-      document
-        .getElementById("gform_1")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          const f = e.target;
-          const name = encodeURIComponent(f.input_1.value);
-          const lastname = encodeURIComponent(f.input_5.value);
-          const email = encodeURIComponent(f.input_3.value);
-          const business = encodeURIComponent(f.input_6.value);
-          const phone = encodeURIComponent(f.input_2.value);
-          const country = encodeURIComponent(f.country.value);
-          const role = encodeURIComponent(f.input_9.value);
-          const message = encodeURIComponent(f.input_4.value);
-
-          const subject = encodeURIComponent(
-            "New contact from Cannaleaf website"
-          );
-          const body = `First name: ${name}%0D%0ALast name: ${lastname}%0D%0AEmail: ${email}%0D%0ABusiness: ${business}
-          %0D%0APhone: ${phone}%0D%0ACountry: ${country}%0D%0AJob Role: ${role}%0D%0AMessage: ${message}`;
-
-          window.location.href = `mailto:info@cannaleaf.org?subject=${subject}&body=${body}`;
-        });
-    </script>
   </body>
 </html>
