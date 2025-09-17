@@ -1,11 +1,13 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize inputs
-    $firstname = htmlspecialchars($_POST["firstname"]);
+    $name = htmlspecialchars($_POST["name"]);
     $lastname  = htmlspecialchars($_POST["lastname"]);
     $email     = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $business  = htmlspecialchars($_POST["business"]);
     $phone     = htmlspecialchars($_POST["phone"]);
-    $company   = htmlspecialchars($_POST["company"]);
+    $country   = htmlspecialchars($_POST["country"]);
+    $role   = htmlspecialchars($_POST["role"]);
     $message   = htmlspecialchars($_POST["message"]);
 
     // Email settings
@@ -21,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           . "Job Role: $role\n"
           . "Message:\n$message";
 
-    $headers = "From: no-reply@yourdomain.com\r\n";
+    $headers = "From: no-reply@cannaleaf.org\r\n";
     $headers .= "Reply-To: $email\r\n";
 
     // Send email
