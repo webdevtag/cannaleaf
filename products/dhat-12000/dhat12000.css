@@ -1825,8 +1825,10 @@ ul.elementor-nav-menu--dropdown a:hover {
   .elementor-element.elementor-element-11e0a3e9
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
-  background-image: url("https://hodtec.com/wp-content/uploads/2024/06/american-made.jpg");
+  background-image: url("../../wp-content/uploads/australian-made.jpg");
   background-position: center left;
+      background-repeat: no-repeat;
+    background-size: cover;
 }
 .elementor-1671 .elementor-element.elementor-element-11e0a3e9::before,
 .elementor-1671
