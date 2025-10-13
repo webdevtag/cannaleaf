@@ -1,6 +1,7 @@
 img:is([sizes="auto" i], [sizes^="auto," i]) {
   contain-intrinsic-size: 3000px 1500px;
 }
+
 img.emoji {
   display: inline !important;
   border: none !important;
@@ -6395,4 +6396,39 @@ font font {
       format("woff2"),
     url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/webfonts/fa-regular-400.ttf)
       format("truetype");
+}
+
+/* ---------- Elementor background video: height-first (no horizontal stretch) ---------- */
+
+/* 1️⃣ Ensure section container is ready for absolute positioning */
+.elementor-section {
+  position: relative !important;
+  overflow: hidden !important;
+}
+.elementor-element[data-id="e02986e8"] {
+  position: relative;
+  width: 100%;
+  height: 150vh; /* full viewport height */
+  overflow: hidden;
+}
+
+.elementor-background-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* send video behind content */
+  overflow: hidden;
+}
+
+.elementor-background-video-container iframe,
+.elementor-background-video-container .elementor-background-video-embed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%; /* 16:9 ratio to cover full width */
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
