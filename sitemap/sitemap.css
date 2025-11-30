@@ -1591,8 +1591,8 @@ ul.elementor-nav-menu--dropdown a:hover {
   content: "\e87f";
 }
 .elementor-kit-1771 {
-  --e-global-color-primary: #6da843;
-  --e-global-color-secondary: #365459;
+  --e-global-color-primary: #3abfef;
+  --e-global-color-secondary: #08344e;
   --e-global-color-text: #1b1b1b;
   --e-global-color-accent: #000000;
   --e-global-color-bd28782: #ffffff;
@@ -1757,8 +1757,8 @@ ul.elementor-nav-menu--dropdown a:hover {
   text-align: left;
 }
 .elementor-1845 .elementor-element.elementor-element-3c5499e img {
-  width: 120px;
-  max-width: 120px;
+  width: 254px;
+  max-width: 254px;
 }
 .elementor-1845 .elementor-element.elementor-element-ebcc756 {
   --display: flex;
@@ -2191,12 +2191,12 @@ ul.elementor-nav-menu--dropdown a:hover {
   transition: all 0.9s ease;
 }
 #header.elementor-sticky--effects .logo img {
-  content: url("https://hodtec.com/wp-content/uploads/2024/07/hodtec-logo.png");
-  width: 100px;
-  max-width: 100px;
+  content: url("../wp-content/uploads/Cannaleaf-Logo.png");
+  width: 234px;
+  max-width: 234px;
 }
 #header:hover .logo img {
-  content: url("https://hodtec.com/wp-content/uploads/2024/07/hodtec-logo.png");
+  content: url("../wp-content/uploads/Cannaleaf-Logo.png");
 }
 #header.elementor-sticky--effects .navmenu a,
 #header:hover .navmenu a {
@@ -2948,7 +2948,7 @@ ul.elementor-nav-menu--dropdown a:hover {
   }
 }
 .green {
-  color: #6da843 !important;
+  color: #3abfef !important;
 }
 .elementor-element .e--pointer-underline .elementor-item:after {
   height: 9px !important;
@@ -3004,10 +3004,10 @@ ul.elementor-nav-menu--dropdown a:hover {
   content: "";
 }
 .elementor-widget-button .elementor-button::before {
-  background: #365459;
+  background: #08344e;
 }
 .elementor-widget-button .elementor-button::after {
-  background: #6da843;
+  background: #3abfef;
   transform: translateX(-100%);
 }
 .elementor-button:hover .elementor-button-text {
@@ -3034,16 +3034,16 @@ ul.elementor-nav-menu--dropdown a:hover {
   background: #fff;
 }
 .whitebutton.elementor-widget-button .elementor-button::after {
-  background: #6da843;
+  background: #3abfef;
 }
 .greenbutton.elementor-widget-button .elementor-button {
   color: #fff;
 }
 .greenbutton.elementor-widget-button .elementor-button::before {
-  background: #6da843;
+  background: #3abfef;
 }
 .greenbutton.elementor-widget-button .elementor-button::after {
-  background: #365459;
+  background: #08344e;
 }
 table {
   width: 100%;
