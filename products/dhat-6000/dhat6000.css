@@ -4698,28 +4698,23 @@ font font {
     url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/webfonts/fa-regular-400.ttf)
       format("truetype");
 }
-/* --- FIX FOR TEXT CUTTING OFF ON MAC/LAPTOPS --- */
-@media screen and (max-width: 1366px) {
-  /* 1. Force the main containers to align safely to the start (left) */
-  .elementor-1662 .e-con.e-parent,
-  .elementor-1662 .e-con.e-child {
-    justify-content: flex-start !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  /* 2. Ensure the inner content doesn't overflow */
-  .elementor-1662 .e-con-inner {
+/* --- CRITICAL FIX: PREVENT LEFT SIDE CUTOFF ON LAPTOPS --- */
+@media screen and (max-width: 1500px) {
+  /* 1. Target the specific "How It Works" text block container */
+  .elementor-1662 .elementor-element.elementor-element-124834b0 {
+    /* Force it to fit the screen instead of being fixed at 660px */
     width: 100% !important;
     max-width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    --width: 100% !important; /* Overrides Elementor's specific variable */
   }
 
-  /* 3. Add a safety gutter so text never touches the screen edge */
-  .elementor-element {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    box-sizing: border-box !important;
+  /* 2. Target the column holding the text */
+  .elementor-1662 .elementor-element.elementor-element-3c6bdc58 {
+    /* Stop pushing content to the right edge */
+    align-items: flex-start !important;
+
+    /* Ensure there is always a safe gap on the left */
+    padding-left: 40px !important;
+    padding-right: 40px !important;
   }
 }
